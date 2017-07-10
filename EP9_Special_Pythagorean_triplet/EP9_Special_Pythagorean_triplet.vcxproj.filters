@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="EP8_largest_product_in_a_series.cpp">
+    <ClCompile Include="EP9_Special_Pythagorean_triplet.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

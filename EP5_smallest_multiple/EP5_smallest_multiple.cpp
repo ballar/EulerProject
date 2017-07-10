@@ -1,7 +1,10 @@
 // EP5_smallest_multiple.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
+//2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+//
+//What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20 ?
+
 #include <math.h>
 #include <iostream>
 using namespace std;

@@ -1,11 +1,15 @@
 // EP7_10001st_prime.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
+//By listing the first six prime numbers : 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+//
+//What is the 10 001st prime number ?
+
 #include <math.h>
 #include <vector>
+#include <iostream>
 
-bool IsPrime(double x, std::vector<int> vr);
+bool IsPrime(int x, std::vector<int> vr);
 
 int main()
 {
@@ -21,14 +25,16 @@ int main()
 	
 	printf("%d\n", i);
 
+	std::cin.get(); std::cin.get();
+
 	return 0;
 }
 
-bool IsPrime(double x, std::vector<int> vr)
+bool IsPrime(int x, std::vector<int> vr)
 {
-	int n = vr.size();
-	for (int i = 0; i < n; i++) {
-		if (remainder(x, vr[i]) == 0) {
+	auto x_sqrt = sqrt((double)x);
+	for (int i = 0; vr[i] <= x_sqrt; ++i) {
+		if ((x % vr[i]) == 0) {
 			return false;
 		}
 	}
